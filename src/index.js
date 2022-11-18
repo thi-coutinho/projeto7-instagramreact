@@ -1,14 +1,4 @@
 import ReactDOM from "react-dom";
+import App from "./components/App.js"
 
-function Lista() {
-    return (
-        <ul>
-            <li>Topico 1</li>
-            <li>Topico 2</li>
-            <li>Topico 3</li>
-        </ul>
-    )
-}
-
-const lista = Lista()
-ReactDOM.render(lista, document.querySelector(".root"))
+ReactDOM.render(<App/>, document.querySelector(".root"))
