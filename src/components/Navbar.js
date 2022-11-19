@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-       <div>
+       <>
         <div class="barra-fixa">
                 <div class="barratopo pc">
                     <div class="bar-left">
@@ -33,6 +33,6 @@ export default function Navbar() {
                     <ion-icon name="person-outline"></ion-icon>
                 </div>
             </div>
-       </div>
+       </>
     )
 }

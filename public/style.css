@@ -31,9 +31,6 @@ body {
   background-color: #ffffff;
   align-items: center;
   margin: 0 auto;
-  /* border: 1px solid #dbdbdb;
-  border-radius: 3px; */
-  /* margin: auto 0; */
 }
 
 .bar-left {
@@ -200,6 +197,10 @@ body {
 }
 .profile img {
   margin-right: 17px;
+}
+.profile ion-icon{
+  color:#8e8e8e ;
+  margin-left: 3px;
 }
 .sidebar span {
   font-weight: 300;
