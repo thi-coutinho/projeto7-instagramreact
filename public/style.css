@@ -15,7 +15,7 @@ body {
   width: 100%;
   position: fixed;
   display: flex;
-  border: 1px solid #DBDBDB
+  border: 1px solid #DBDBDB;
   justify-content: center;
   align-items: center;
   top: 0;
@@ -197,6 +197,9 @@ body {
 }
 .profile img {
   margin-right: 17px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
 }
 .profile ion-icon{
   color:#8e8e8e ;
@@ -286,7 +289,7 @@ body {
     width: 100%;
     position: fixed;
     display: flex;
-    border: 1px solid #DBDBDB
+    border: 1px solid #DBDBDB;
     justify-content: space-between;
     align-items: center;
     bottom: 0;
