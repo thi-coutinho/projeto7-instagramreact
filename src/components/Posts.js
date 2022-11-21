@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 export default function Posts() {
     const posts = [
@@ -32,7 +32,7 @@ export default function Posts() {
             },
             curtidas: 101523,
         },
-    ]
+    ];
     return (
         <>
             {posts.map((p, i) => (
@@ -50,10 +50,10 @@ export default function Posts() {
 }
 
 function Post(props) {
-    const [save, setSave] = useState("bookmark-outline")
-    const [like, setLike] = useState("heart-outline")
-    const [curtidas, setCurtidas] = useState(props.curtidas)
-    const [heartAnimate, setHeartAnimate] = useState(<></>)
+    const [save, setSave] = useState("bookmark-outline");
+    const [like, setLike] = useState("heart-outline");
+    const [curtidas, setCurtidas] = useState(props.curtidas);
+    const [heartAnimate, setHeartAnimate] = useState(<></>);
 
     function curtir() {
         if (like === "heart") {
@@ -66,7 +66,7 @@ function Post(props) {
 
     }
     function curtirImagem() {
-        const timeDelayAnimation = 500
+        const timeDelayAnimation = 500;
         setHeartAnimate(<ion-icon name="heart"></ion-icon>)
         setTimeout(setHeartAnimate, timeDelayAnimation, <></>)
 

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 const timeDelayError = 500
 
 export default function Usuario(props) {
