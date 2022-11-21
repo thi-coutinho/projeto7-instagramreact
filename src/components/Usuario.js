@@ -1,4 +1,5 @@
 import { useState } from "react"
+const timeDelayError = 500
 
 export default function Usuario(props) {
     const [name,setName] = useState(props.name)
@@ -6,19 +7,19 @@ export default function Usuario(props) {
 
     function errorImage() {
         setImagem("./assets/person-circle-sharp.svg")
-        setTimeout(alert,500,"URL inválida")
+        setTimeout(alert,timeDelayError,"URL inválida")
     }
     function editImage() {
         const urlImage = prompt("Insira um url da sua nova imagem")
-        if (urlImage) setImagem(urlImage)
+        if (urlImage) {setImagem(urlImage)}
         else {
             setImagem("./assets/person-circle-sharp.svg")
-            setTimeout(alert,500,"URL inválida")
+            setTimeout(alert,timeDelayError,"URL inválida")
         }
     }
     function editName() {
-        let response = prompt("Qual o seu nome?")
-        if (response) setName(response)
+        const response = prompt("Qual o seu nome?")
+        if (response) {setName(response)}
     }
 
     return (

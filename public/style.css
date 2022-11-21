@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +10,7 @@ body {
   /* display: column;
   align-items: center; */
 }
+
 .barra-fixa {
   background-color: #ffffff;
   height: 54px;
@@ -21,6 +23,7 @@ body {
   top: 0;
   z-index: 2;
 }
+
 .barratopo {
   /* height: 54px; */
 
@@ -49,6 +52,7 @@ body {
   margin: 0 10px;
   width: 20px;
 }
+
 .barratopo img {
   width: 103px;
 }
@@ -59,6 +63,7 @@ body {
   width: 1px;
   height: 22px;
 }
+
 .pesquisa {
   width: 215px;
   height: 28px;
@@ -70,6 +75,7 @@ body {
 .pesquisa::placeholder {
   text-align: center;
 }
+
 .conteudoprinc {
   margin: 88px auto 0px;
   width: 935px;
@@ -77,6 +83,7 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+
 .barra-stories {
   display: flex;
   align-items: center;
@@ -99,11 +106,13 @@ body {
   top: 46px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 80));
 }
+
 .stories-icones {
   display: flex;
   flex-direction: column;
   margin-left: 14px;
 }
+
 .stories-icones img {
   height: 66px;
   width: 66px;
@@ -128,23 +137,32 @@ body {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
+
 .post ion-icon {
   margin-right: 5px;
 }
-.post-image{
+
+.post-image {
   position: relative;
 }
+
 @keyframes heart {
-  from  {font-size: calc(var(--iconsize) * 0.2);
+  from {
+    font-size: calc(var(--iconsize) * 0.2);
     top: calc(50% - var(--iconsize) * 0.2 /2);
-    left: calc(50% - var(--iconsize)  * 0.2 /2);}
-  to {font-size: var(--iconsize);
+    left: calc(50% - var(--iconsize) * 0.2 /2);
+  }
+
+  to {
+    font-size: var(--iconsize);
     top: calc(50% - var(--iconsize)/2);
-  left: calc(50% - var(--iconsize)/2);}
-    
+    left: calc(50% - var(--iconsize)/2);
+  }
+
 }
-.post-image>ion-icon[name="heart"]{
-  --iconsize:150px;
+
+.post-image>ion-icon[name="heart"] {
+  --iconsize: 150px;
   position: absolute;
   font-size: var(--iconsize);
   top: calc(50% - var(--iconsize)/2);
@@ -166,6 +184,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .post-top p {
   color: #262626;
   margin-left: 15px;
@@ -173,6 +192,7 @@ body {
   font-size: 14px;
   line-height: 16px;
 }
+
 .post-top img {
   width: 32px;
 }
@@ -183,6 +203,7 @@ body {
   margin: 5px 10px;
   align-items: center;
 }
+
 .post-bottom img {
   width: 20px;
 }
@@ -193,12 +214,15 @@ body {
   align-items: center;
   margin: 10px;
 }
+
 .curtidos p {
   margin-left: 6px;
 }
+
 .curtidos span {
   font-weight: 500;
 }
+
 .sidebar {
   /* margin-top: 18px; */
   width: 293px;
@@ -212,32 +236,38 @@ body {
 .sidebar img {
   margin-right: 11px;
 }
+
 .profile {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin: 20px 0px;
 }
+
 .profile img {
   margin-right: 17px;
   width: 56px;
   height: 56px;
   border-radius: 50%;
 }
-.profile ion-icon{
-  color:#8e8e8e ;
+
+.profile ion-icon {
+  color: #8e8e8e;
   margin-left: 3px;
 }
+
 .sidebar span {
   font-weight: 300;
   color: #8e8e8e;
 }
+
 .sugestoes {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .sugestao {
   /* background-color: red; */
   display: flex;
@@ -245,17 +275,19 @@ body {
   width: 100%;
   margin-top: 17px;
 }
+
 .sugestoes :nth-child(1) {
   margin-top: 0;
   font-size: 12px;
   font-weight: 500;
 }
+
 .sugestao :nth-child(1) {
   display: flex;
 }
 
 .post-bottom ion-icon[name="heart"] {
-  color:red;
+  color: red;
 }
 
 .azul {
@@ -279,6 +311,7 @@ body {
   .sidebar {
     display: none;
   }
+
   .conteudoprinc {
     width: 614px;
   }
@@ -288,18 +321,24 @@ body {
   body {
     width: 100%;
   }
+
   .sidebar {
     display: none;
   }
+
   .conteudoprinc {
     width: 100%;
+    margin-top: 54px;
   }
+
   .pc {
     display: none;
   }
+
   .mobile {
     display: inline;
   }
+
   .barratopo-m {
     display: flex;
     margin: 0 21px;
@@ -307,9 +346,11 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
   .barratopo-m img {
     width: 103px;
   }
+
   .barra-fixa-bottom {
     background-color: #ffffff;
     height: 54px;
@@ -322,12 +363,15 @@ body {
     bottom: 0;
     z-index: 2;
   }
+
   .coluna1 {
     width: 100%;
   }
+
   .post {
     width: 100%;
   }
+
   .ajuste-mobile {
     width: 100%;
   }
@@ -346,9 +390,5 @@ body {
 
   .barra-stories::-webkit-scrollbar {
     height: 0;
-  }
-
-  .conteudoprinc {
-    margin-top: 54px;
   }
 }

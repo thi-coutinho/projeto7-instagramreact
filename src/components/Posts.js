@@ -66,9 +66,9 @@ function Post(props) {
 
     }
     function curtirImagem() {
-
+        const timeDelayAnimation = 500
         setHeartAnimate(<ion-icon name="heart"></ion-icon>)
-        setTimeout(setHeartAnimate, 500, <></>)
+        setTimeout(setHeartAnimate, timeDelayAnimation, <></>)
 
         if (like === "heart-outline") {
             setLike("heart")

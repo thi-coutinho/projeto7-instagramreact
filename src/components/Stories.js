@@ -40,7 +40,7 @@ export default function Stories() {
             <a href="#">
                 <ion-icon className="pc" name="chevron-forward-circle"></ion-icon>
             </a>
-            {stories.map((s,i)=> <Story key={i} userFoto={s.userFoto} userName = {s.userName}/>)}
+            {stories.map((s, i) => <Story key={i} userFoto={s.userFoto} userName={s.userName} />)}
         </div>
     )
 }
@@ -48,9 +48,8 @@ export default function Stories() {
 function Story(props) {
     return (
         <div className="stories-icones">
-                <img src={props.userFoto} />
-                <p>{props.userName}</p>
-            </div>
+            <img src={props.userFoto} />
+            <p>{props.userName}</p>
+        </div>
     )
-    
 }
