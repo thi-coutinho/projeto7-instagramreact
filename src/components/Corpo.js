@@ -4,8 +4,8 @@ import Sidebar from "./Sidebar.js"
 
 export default function Corpo() {
     return (
-        <div class="conteudoprinc">
-            <div class="coluna1">
+        <div className="conteudoprinc">
+            <div className="coluna1">
                 <Stories></Stories>
                 <Posts></Posts>
             </div>

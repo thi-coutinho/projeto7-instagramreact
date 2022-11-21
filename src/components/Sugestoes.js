@@ -28,12 +28,12 @@ const sugestoes = [
 
 export default function Sugestoes() {
     return (
-        <div class="sugestoes">
-            <div class="sugestao">
+        <div className="sugestoes">
+            <div className="sugestao">
                 <span>Sugestões para você</span>
                 <p>Ver tudo</p>
             </div>
-            {sugestoes.map((s)=><Sugestao userFoto={s.userFoto} userName={s.userName} userStatus={s.userStatus} ></Sugestao>   )}
+            {sugestoes.map((s,i)=><Sugestao key={i} userFoto={s.userFoto} userName={s.userName} userStatus={s.userStatus} ></Sugestao>   )}
             
         </div>
     )
@@ -41,7 +41,7 @@ export default function Sugestoes() {
 
 function Sugestao(props) {
     return (
-        <div class="sugestao">
+        <div className="sugestao">
             <div>
                 <img src={props.userFoto} alt={props.userName} />
                 <div>
@@ -50,7 +50,7 @@ function Sugestao(props) {
                     <span>{props.userStatus}</span>
                 </div>
             </div>
-            <div class="azul">Seguir</div>
+            <div className="azul">Seguir</div>
         </div>
     )
 }

@@ -36,18 +36,18 @@ const stories = [
 
 export default function Stories() {
     return (
-        <div class="barra-stories">
+        <div className="barra-stories">
             <a href="#">
-                <ion-icon class="pc" name="chevron-forward-circle"></ion-icon>
+                <ion-icon className="pc" name="chevron-forward-circle"></ion-icon>
             </a>
-            {stories.map((s)=> <Story userFoto={s.userFoto} userName = {s.userName}/>)}
+            {stories.map((s,i)=> <Story key={i} userFoto={s.userFoto} userName = {s.userName}/>)}
         </div>
     )
 }
 
 function Story(props) {
     return (
-        <div class="stories-icones">
+        <div className="stories-icones">
                 <img src={props.userFoto} />
                 <p>{props.userName}</p>
             </div>

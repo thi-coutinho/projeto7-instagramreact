@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .barratopo {
   /* height: 54px; */
@@ -131,6 +131,29 @@ body {
 .post ion-icon {
   margin-right: 5px;
 }
+.post-image{
+  position: relative;
+}
+@keyframes heart {
+  from  {font-size: calc(var(--iconsize) * 0.2);
+    top: calc(50% - var(--iconsize) * 0.2 /2);
+    left: calc(50% - var(--iconsize)  * 0.2 /2);}
+  to {font-size: var(--iconsize);
+    top: calc(50% - var(--iconsize)/2);
+  left: calc(50% - var(--iconsize)/2);}
+    
+}
+.post-image>ion-icon[name="heart"]{
+  --iconsize:150px;
+  position: absolute;
+  font-size: var(--iconsize);
+  top: calc(50% - var(--iconsize)/2);
+  left: calc(50% - var(--iconsize)/2);
+  color: white;
+  animation-name: heart;
+  animation-duration: 0.3s;
+  z-index: 1;
+}
 
 .post-top {
   display: flex;
@@ -231,6 +254,10 @@ body {
   display: flex;
 }
 
+.post-bottom ion-icon[name="heart"] {
+  color:red;
+}
+
 .azul {
   color: #139ef2;
   font-size: 12px;
@@ -293,7 +320,7 @@ body {
     justify-content: space-between;
     align-items: center;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
   }
   .coluna1 {
     width: 100%;
